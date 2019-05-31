@@ -4,7 +4,9 @@
   "description": "Service",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "syun",
   "license": "ISC",
@@ -13,10 +15,12 @@
     "gulp": "^4.0.0",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.3.2",
-    "xlsx-style": "^0.8.13"
+    "xlsx-style": "^0.8.13",
+    "snyk": "^1.170.0"
   },
   "devDependencies": {
     "gulp-babel": "^6.1.2",
     "gulp-load-plugins": "^1.4.0"
-  }
+  },
+  "snyk": true
 }
